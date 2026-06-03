@@ -1,0 +1,12 @@
+{
+  "name": "hrms-bonus-service",
+  "version": "1.0.0",
+  "description": "HRMS Bonus Calculation Service",
+  "main": "src/bonusService.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
+}
