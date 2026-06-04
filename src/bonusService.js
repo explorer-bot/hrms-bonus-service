@@ -11,7 +11,11 @@ function calculateBonus(salary) {
     return salary * 0.05;
   }
 
-  return salary * 0.08;
+  if (salary <= 2000000) {
+    return salary * 0.08;
+  }
+
+  return salary * 0.10;
 }
 
 module.exports = {

@@ -10,8 +10,12 @@ describe("Bonus Calculation", () => {
     expect(calculateBonus(800000)).toBe(40000);
   });
 
-  test("should return 8% bonus for salary above 1000000", () => {
+  test("should return 8% bonus for salary between 1000001 and 2000000", () => {
     expect(calculateBonus(1500000)).toBe(120000);
+  });
+
+  test("should return 10% bonus for salary above 2000000", () => {
+    expect(calculateBonus(2500000)).toBe(250000);
   });
 
   test("should throw error for negative salary", () => {
